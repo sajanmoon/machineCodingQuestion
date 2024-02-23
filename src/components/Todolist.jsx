@@ -10,7 +10,6 @@ const Todolist = () => {
       inputText: inputText,
       number: 1,
     };
-
     setInputData([...inputData, newObj]);
     setInputText("");
   };
@@ -26,7 +25,6 @@ const Todolist = () => {
     const restData = removeData[index];
     const restItem = removeData.filter((elem, i) => i !== index);
     setRemoveData(restItem);
-
     setInputData([...inputData, restData]);
   };
 

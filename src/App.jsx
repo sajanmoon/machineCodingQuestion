@@ -1,9 +1,11 @@
+import CounterApp from "./components/CounterApp";
 import Todolist from "./components/Todolist";
 
 function App() {
   return (
     <>
-      <Todolist />
+      {/* <Todolist /> */}
+      <CounterApp />
     </>
   );
 }
