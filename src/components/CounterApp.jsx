@@ -21,7 +21,7 @@ const CounterApp = () => {
     <div>
       <h1>COUNTER APP</h1>
       <input
-        type="text"
+        type="number"
         placeholder="increment/decrement by"
         value={inputData}
         onChange={(e) => setInputData(e.target.value)}
