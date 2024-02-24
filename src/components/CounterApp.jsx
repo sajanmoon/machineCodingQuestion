@@ -26,10 +26,16 @@ const CounterApp = () => {
         value={inputData}
         onChange={(e) => setInputData(e.target.value)}
       />
-      <button onClick={handleReset}>RESET</button>
+      <button className=" border border-black" onClick={handleReset}>
+        RESET
+      </button>
       <h1>{count}</h1>
-      <button onClick={handleDecrement}>DECR</button>
-      <button onClick={handleIncrement}>INCR</button>
+      <button className=" border border-black" onClick={handleDecrement}>
+        DECR
+      </button>
+      <button className=" border border-black" onClick={handleIncrement}>
+        INCR
+      </button>
     </div>
   );
 };

@@ -33,18 +33,26 @@ const Todolist = () => {
       <h1>Todo</h1>
       <div className="container">
         <input
+          className=" border border-black"
           type="text"
           placeholder="add task here"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
         />
-        <button onClick={handleInputItems}>ADD</button>
+        <button className=" border border-black" onClick={handleInputItems}>
+          ADD
+        </button>
       </div>
       <div className="items">
         {inputData.map((elem, index) => (
           <div key={index}>
             <li>{elem.inputText}</li>
-            <button onClick={() => handleDeleteItem(index)}>Delete</button>
+            <button
+              className=" border border-black"
+              onClick={() => handleDeleteItem(index)}
+            >
+              Delete
+            </button>
           </div>
         ))}
       </div>
@@ -53,7 +61,12 @@ const Todolist = () => {
         {removeData.map((elem, index) => (
           <div key={index}>
             <li>{elem.inputText}</li>
-            <button onClick={() => handleRestoreData(index)}>Restore</button>
+            <button
+              className=" border border-black"
+              onClick={() => handleRestoreData(index)}
+            >
+              Restore
+            </button>
           </div>
         ))}
       </div>
