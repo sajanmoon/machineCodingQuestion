@@ -21,6 +21,7 @@ const CounterApp = () => {
     <div>
       <h1>COUNTER APP</h1>
       <input
+        className=" border border-black"
         type="number"
         placeholder="increment/decrement by"
         value={inputData}

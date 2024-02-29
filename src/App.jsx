@@ -1,15 +1,19 @@
 import Accordian from "./components/Accordian";
 import CounterApp from "./components/CounterApp";
 import DarkMode from "./components/DarkMode";
+import Pagination from "./components/Pagination";
+import Todolist from "./components/Todolist";
 import WordCounter from "./components/WordCounter";
 
 function App() {
   return (
     <>
-      <CounterApp />
-      <DarkMode />
-      <Accordian />
-      <WordCounter />
+      {/* <Todolist /> */}
+      {/* <CounterApp /> */}
+      {/* <DarkMode /> */}
+      {/* <Accordian /> */}
+      {/* <WordCounter /> */}
+      <Pagination />
     </>
   );
 }
